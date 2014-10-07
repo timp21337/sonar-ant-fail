@@ -1,0 +1,13 @@
+An illustration of the sonar ant task failing with Debian Ant. 
+The same project succeeds with Ant direct from Apache. 
+
+The problem is caused by the logger (logback) failing to find 
+an XML parser to read its configuration. 
+
+Tested with:
+Sonar 4.4 installed and run with default settings 
+Apache Ant(TM) version 1.9.4 compiled on April 29 2014 (current apache)
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014 (current Ubuntu)
+
+
+

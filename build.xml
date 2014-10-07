@@ -1,0 +1,31 @@
+<project
+    name="ant-fail"
+    default="sonar"
+    xmlns:jacoco="antlib:org.jacoco.ant"
+    xmlns:sonar="antlib:org.sonar.ant"
+    >
+
+  <path id="src_build_classpath">
+    <fileset dir="lib" includes="*.jar"/>
+  </path>
+  <path id="ant_libs">
+    <fileset dir="lib/ant" includes="*.jar"/>
+  </path>
+
+  <taskdef uri="antlib:org.sonar.ant"
+           resource="org/sonar/ant/antlib.xml"
+           classpathref="ant_libs" />
+
+  <target name="sonar" >
+    <property name="sonar.language" value="java" />
+    <property name="sonar.binaries" value="output" />
+    <property name="sonar.sources" value="src" />
+    <property name="sonar.projectKey" value="fail" />
+    <property name="sonar.projectName" value="Fail" />
+    <property name="sonar.projectVersion" value = "0.1" />
+
+    <sonar:sonar />
+  </target>
+
+
+</project>
