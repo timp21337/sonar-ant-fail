@@ -7,7 +7,8 @@ an XML parser to read its configuration.
 Tested with:
 Sonar 4.4 installed and run with default settings 
 Apache Ant(TM) version 1.9.4 compiled on April 29 2014 (current apache)
-Apache Ant(TM) version 1.9.3 compiled on April 8 2014 (current Ubuntu)
+Apache Ant(TM) version 1.9.4 compiled on September 30 2014 (current testing)
+
 
 
 
