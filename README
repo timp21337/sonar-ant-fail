@@ -1,14 +1,17 @@
-An illustration of the sonar ant task failing with Debian Ant. 
-The same project succeeds with Ant direct from Apache. 
+An illustration of the sonar ant task failing with Debian Ant and java6. 
 
-The problem is caused by the logger (logback) failing to find 
+The debian bug is https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=764376
+
+As of 2014-11-17 the fix has arrived in Ubuntu. 
+
+The problem was caused by the logger (logback) failing to find 
 an XML parser to read its configuration. 
 
-Tested with:
 Sonar 4.4 installed and run with default settings 
+
+The project now builds with 
 Apache Ant(TM) version 1.9.4 compiled on April 29 2014 (current apache)
 Apache Ant(TM) version 1.9.4 compiled on September 30 2014 (current testing)
-
-
+Apache Ant(TM) version 1.9.4 compiled on October 7 2014 (current Ubuntu)
 
 
